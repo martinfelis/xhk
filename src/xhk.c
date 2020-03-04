@@ -259,6 +259,10 @@ int mirror_key(int keycode)
     /* Swap special cases */
     switch(keycode) {
     case KEY_BACKSPACE:
+        keycode = KEY_ESC;
+        break;
+
+    case KEY_SQ_BR_OP:
         keycode = KEY_TAB;
         break;
     case KEY_TAB:
@@ -358,7 +362,7 @@ int ProcessKeycode(XWindowsScreen_t * screen, int keycode, int up_flag)
     }
 
     /* Allow the user to 'cancel' a modifier without performing any further action */
-    if(keycode == KEY_ESC && space != SPACE_STATE_START) {
+    if(keycode == KEY_F12 && space != SPACE_STATE_START) {
         space = SPACE_STATE_MODIFIED;
         return -1;
     }

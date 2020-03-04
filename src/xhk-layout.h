@@ -48,6 +48,8 @@ enum EN_GB_LAYOUT {
     KEY_I,
     KEY_O,
     KEY_P,
+    KEY_SQ_BR_OP,
+    KEY_SQ_BR_CL,
 
     KEY_ENTER = 36,
     KEY_CTRL  = 37,
@@ -83,6 +85,8 @@ enum EN_GB_LAYOUT {
 
     KEY_SPACE = 65,
     KEY_CAPS = 66,
+
+    KEY_F12 = 96
 };
 
 
